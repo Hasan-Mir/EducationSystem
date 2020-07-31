@@ -205,3 +205,35 @@ void Controller::dropCourse(const std::string& studentID, const std::string& cou
         cout << e.what() << endl;
     }
 }
+
+void Controller::readMembersFromFile(){
+    ifstream input("members.txt");
+    char typeSpecifier;
+    Student *stu;
+    Professor *prof;
+    DoubleMajorStudent *dmStu;
+    string id;
+    string first;
+    string last;
+    string title;
+    double wh;
+    while (!input.eof()){
+        input >> typeSpecifier;
+        if(typeSpecifier == 'S'){
+            input >> id >> first >> last >> wh;
+            stu = new Student(id,first,last,wh,vector<string>{} , map<string , double>{});
+            mathClass.push_back(stu);
+        }
+        else if(typeSpecifier == 'P'){
+            input >> id >> first >> last >> title >> wh;
+            prof = new Professor(id , first , last , wh , title);
+            mathClass.push_back(prof);
+        }
+        else if(typeSpecifier == 'D'){
+            input >> id >> first >> last >> wh;
+            dmStu = new DoubleMajorStudent(id , first , last , wh , vector<string>{} , map<string , double>{} , "");
+            mathClass.push_back(dmStu);
+        }
+    }
+    input.close();
+}

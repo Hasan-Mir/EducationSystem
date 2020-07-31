@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include "../Model/Student.h"
+#include "../Model/DoubleMajorStudent.h"
 #include "../Model/Professor.h"
 #include "../Model/Course.h"
 
@@ -40,6 +41,8 @@ public:
     bool inProfessors(const std::string& ID) const;
     bool inProfessorsByLastName(const std::string& last) const;
     bool inCourses(const std::string& courseName) const;
+
+    void readMembersFromFile();
 };
 
 

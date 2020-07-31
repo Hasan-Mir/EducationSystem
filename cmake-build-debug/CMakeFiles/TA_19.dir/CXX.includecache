@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+D:/Learning Course/C++/EducationSystem/Controller/Controller.cpp
+Controller.h
+D:/Learning Course/C++/EducationSystem/Controller/Controller.h
+fstream
+-
+vector
+-
+map
+-
+algorithm
+-
+
 D:/Learning Course/C++/EducationSystem/Controller/Controller.h
 string
 -
@@ -13,6 +25,8 @@ vector
 -
 ../Model/Student.h
 D:/Learning Course/C++/EducationSystem/Model/Student.h
+../Model/DoubleMajorStudent.h
+D:/Learning Course/C++/EducationSystem/Model/DoubleMajorStudent.h
 ../Model/Professor.h
 D:/Learning Course/C++/EducationSystem/Model/Professor.h
 ../Model/Course.h
@@ -23,6 +37,10 @@ string
 -
 vector
 -
+
+D:/Learning Course/C++/EducationSystem/Model/DoubleMajorStudent.h
+Student.h
+D:/Learning Course/C++/EducationSystem/Model/Student.h
 
 D:/Learning Course/C++/EducationSystem/Model/Person.h
 string
@@ -48,6 +66,42 @@ vector
 map
 -
 
+D:/Learning Course/C++/EducationSystem/View/Menus/CommandsFromFileMenu.cpp
+CommandsFromFileMenu.h
+D:/Learning Course/C++/EducationSystem/View/Menus/CommandsFromFileMenu.h
+iostream
+-
+fstream
+-
+sstream
+-
+iterator
+-
+stdexcept
+-
+
+D:/Learning Course/C++/EducationSystem/View/Menus/CommandsFromFileMenu.h
+string
+-
+Menu.h
+D:/Learning Course/C++/EducationSystem/View/Menus/Menu.h
+../../Controller/Controller.h
+D:/Learning Course/C++/EducationSystem/Controller/Controller.h
+
+D:/Learning Course/C++/EducationSystem/View/Menus/InternalMenu.cpp
+iostream
+-
+stdexcept
+-
+InternalMenu.h
+D:/Learning Course/C++/EducationSystem/View/Menus/InternalMenu.h
+
+D:/Learning Course/C++/EducationSystem/View/Menus/InternalMenu.h
+string
+-
+Menu.h
+D:/Learning Course/C++/EducationSystem/View/Menus/Menu.h
+
 D:/Learning Course/C++/EducationSystem/View/Menus/LeafMenu.cpp
 LeafMenu.h
 D:/Learning Course/C++/EducationSystem/View/Menus/LeafMenu.h
@@ -60,6 +114,10 @@ string
 Menu.h
 D:/Learning Course/C++/EducationSystem/View/Menus/Menu.h
 
+D:/Learning Course/C++/EducationSystem/View/Menus/Menu.cpp
+Menu.h
+D:/Learning Course/C++/EducationSystem/View/Menus/Menu.h
+
 D:/Learning Course/C++/EducationSystem/View/Menus/Menu.h
 string
 -
@@ -67,4 +125,24 @@ vector
 -
 ../../Controller/Controller.h
 D:/Learning Course/C++/EducationSystem/Controller/Controller.h
+
+D:/Learning Course/C++/EducationSystem/View/View.cpp
+stdexcept
+-
+View.h
+D:/Learning Course/C++/EducationSystem/View/View.h
+
+D:/Learning Course/C++/EducationSystem/View/View.h
+../Controller/Controller.h
+D:/Learning Course/C++/EducationSystem/Controller/Controller.h
+Menus/InternalMenu.h
+D:/Learning Course/C++/EducationSystem/View/Menus/InternalMenu.h
+Menus/CommandsFromFileMenu.h
+D:/Learning Course/C++/EducationSystem/View/Menus/CommandsFromFileMenu.h
+Menus/LeafMenu.h
+D:/Learning Course/C++/EducationSystem/View/Menus/LeafMenu.h
+
+D:/Learning Course/C++/EducationSystem/main.cpp
+View/View.h
+D:/Learning Course/C++/EducationSystem/View/View.h
 

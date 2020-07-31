@@ -5,12 +5,18 @@ CMakeFiles/TA_19.dir/Controller/Controller.cpp.obj
  D:/Learning Course/C++/EducationSystem/Controller/Controller.cpp
  D:/Learning Course/C++/EducationSystem/Controller/Controller.h
  D:/Learning Course/C++/EducationSystem/Model/Course.h
+ D:/Learning Course/C++/EducationSystem/Model/DoubleMajorStudent.h
  D:/Learning Course/C++/EducationSystem/Model/Person.h
  D:/Learning Course/C++/EducationSystem/Model/Professor.h
  D:/Learning Course/C++/EducationSystem/Model/Student.h
 CMakeFiles/TA_19.dir/Model/Course.cpp.obj
  D:/Learning Course/C++/EducationSystem/Model/Course.cpp
  D:/Learning Course/C++/EducationSystem/Model/Course.h
+CMakeFiles/TA_19.dir/Model/DoubleMajorStudent.cpp.obj
+ D:/Learning Course/C++/EducationSystem/Model/DoubleMajorStudent.cpp
+ D:/Learning Course/C++/EducationSystem/Model/DoubleMajorStudent.h
+ D:/Learning Course/C++/EducationSystem/Model/Person.h
+ D:/Learning Course/C++/EducationSystem/Model/Student.h
 CMakeFiles/TA_19.dir/Model/Person.cpp.obj
  D:/Learning Course/C++/EducationSystem/Model/Person.cpp
  D:/Learning Course/C++/EducationSystem/Model/Person.h
@@ -25,6 +31,7 @@ CMakeFiles/TA_19.dir/Model/Student.cpp.obj
 CMakeFiles/TA_19.dir/View/Menus/CommandsFromFileMenu.cpp.obj
  D:/Learning Course/C++/EducationSystem/Controller/Controller.h
  D:/Learning Course/C++/EducationSystem/Model/Course.h
+ D:/Learning Course/C++/EducationSystem/Model/DoubleMajorStudent.h
  D:/Learning Course/C++/EducationSystem/Model/Person.h
  D:/Learning Course/C++/EducationSystem/Model/Professor.h
  D:/Learning Course/C++/EducationSystem/Model/Student.h
@@ -34,6 +41,7 @@ CMakeFiles/TA_19.dir/View/Menus/CommandsFromFileMenu.cpp.obj
 CMakeFiles/TA_19.dir/View/Menus/InternalMenu.cpp.obj
  D:/Learning Course/C++/EducationSystem/Controller/Controller.h
  D:/Learning Course/C++/EducationSystem/Model/Course.h
+ D:/Learning Course/C++/EducationSystem/Model/DoubleMajorStudent.h
  D:/Learning Course/C++/EducationSystem/Model/Person.h
  D:/Learning Course/C++/EducationSystem/Model/Professor.h
  D:/Learning Course/C++/EducationSystem/Model/Student.h
@@ -43,6 +51,7 @@ CMakeFiles/TA_19.dir/View/Menus/InternalMenu.cpp.obj
 CMakeFiles/TA_19.dir/View/Menus/LeafMenu.cpp.obj
  D:/Learning Course/C++/EducationSystem/Controller/Controller.h
  D:/Learning Course/C++/EducationSystem/Model/Course.h
+ D:/Learning Course/C++/EducationSystem/Model/DoubleMajorStudent.h
  D:/Learning Course/C++/EducationSystem/Model/Person.h
  D:/Learning Course/C++/EducationSystem/Model/Professor.h
  D:/Learning Course/C++/EducationSystem/Model/Student.h
@@ -52,6 +61,7 @@ CMakeFiles/TA_19.dir/View/Menus/LeafMenu.cpp.obj
 CMakeFiles/TA_19.dir/View/Menus/Menu.cpp.obj
  D:/Learning Course/C++/EducationSystem/Controller/Controller.h
  D:/Learning Course/C++/EducationSystem/Model/Course.h
+ D:/Learning Course/C++/EducationSystem/Model/DoubleMajorStudent.h
  D:/Learning Course/C++/EducationSystem/Model/Person.h
  D:/Learning Course/C++/EducationSystem/Model/Professor.h
  D:/Learning Course/C++/EducationSystem/Model/Student.h
@@ -60,6 +70,7 @@ CMakeFiles/TA_19.dir/View/Menus/Menu.cpp.obj
 CMakeFiles/TA_19.dir/View/View.cpp.obj
  D:/Learning Course/C++/EducationSystem/Controller/Controller.h
  D:/Learning Course/C++/EducationSystem/Model/Course.h
+ D:/Learning Course/C++/EducationSystem/Model/DoubleMajorStudent.h
  D:/Learning Course/C++/EducationSystem/Model/Person.h
  D:/Learning Course/C++/EducationSystem/Model/Professor.h
  D:/Learning Course/C++/EducationSystem/Model/Student.h
@@ -72,6 +83,7 @@ CMakeFiles/TA_19.dir/View/View.cpp.obj
 CMakeFiles/TA_19.dir/main.cpp.obj
  D:/Learning Course/C++/EducationSystem/Controller/Controller.h
  D:/Learning Course/C++/EducationSystem/Model/Course.h
+ D:/Learning Course/C++/EducationSystem/Model/DoubleMajorStudent.h
  D:/Learning Course/C++/EducationSystem/Model/Person.h
  D:/Learning Course/C++/EducationSystem/Model/Professor.h
  D:/Learning Course/C++/EducationSystem/Model/Student.h
