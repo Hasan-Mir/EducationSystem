@@ -1,5 +1,5 @@
 #include "LeafMenu.h"
-
+#include <algorithm>
 using namespace std;
 
 LeafMenu::LeafMenu(std::string name, Menu* parent)
@@ -11,10 +11,15 @@ void LeafMenu::run() {
     setCurrentMenu(parent);
 
     if(name == "Show This Semester Courses"){
-        for(const auto & course : controller.currentSemesterCourses){
-            cout << course.courseName << "  |  ";
+        if(controller.currentSemesterCourses.size() == 0){
+            cout << "There is nothing to show !" << endl;
         }
-        cout << endl;
+        else{
+            for(const auto & course : controller.currentSemesterCourses){
+                cout << course.courseName << "  |  ";
+            }
+            cout << endl;
+        }
     }
 
     else if(name == "Take Course"){
@@ -26,7 +31,25 @@ void LeafMenu::run() {
     }
 
     else if(name == "Show Student Courses In Current Semester"){
-
+        cout << "Enter Student ID:  ";
+        string stuID;
+        cin >> stuID;
+        try{
+            Student stu = controller.findStudent(stuID);
+            cout << "Student Name: " << stu.getFirstName() << " " << stu.getLastName() << endl;
+            if(stu.currentSemesterCourses.size() == 0){
+                cout << "There is nothing to show !" << endl;
+            }
+            else{
+                for(const auto& course : stu.currentSemesterCourses){
+                    cout << course.first << "\t" << course.second << endl;
+                }
+                cout << endl;
+            }
+        }
+        catch (const invalid_argument& e) {
+            cout << e.what() << endl;
+        }
     }
 
     else if(name == "Calculate Student Salary"){

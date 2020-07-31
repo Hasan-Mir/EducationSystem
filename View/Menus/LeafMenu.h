@@ -9,7 +9,6 @@ public:
     LeafMenu(std::string name, Menu* parent);
     virtual void showSubMenus() const override;
     virtual void run() override;
-
 };
 
 

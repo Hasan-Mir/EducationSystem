@@ -1,5 +1,5 @@
 6
-952023016	Farhang	Doroudian	0	0	0	
+952023016	Farhang	Doroudian	0	0	2   Math1   16   Physics 18
 952023017	Alireza	Akhavan	0	0	0	
 952023018	Sara	Goli	0	0	0	
 952023019	Babak	Moghtader	0	0	0	
