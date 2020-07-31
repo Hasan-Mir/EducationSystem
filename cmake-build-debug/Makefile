@@ -176,6 +176,33 @@ Model/Course.cpp.s:
 	$(MAKE) -f CMakeFiles\TA_19.dir\build.make CMakeFiles/TA_19.dir/Model/Course.cpp.s
 .PHONY : Model/Course.cpp.s
 
+Model/DoubleMajorStudent.obj: Model/DoubleMajorStudent.cpp.obj
+
+.PHONY : Model/DoubleMajorStudent.obj
+
+# target to build an object file
+Model/DoubleMajorStudent.cpp.obj:
+	$(MAKE) -f CMakeFiles\TA_19.dir\build.make CMakeFiles/TA_19.dir/Model/DoubleMajorStudent.cpp.obj
+.PHONY : Model/DoubleMajorStudent.cpp.obj
+
+Model/DoubleMajorStudent.i: Model/DoubleMajorStudent.cpp.i
+
+.PHONY : Model/DoubleMajorStudent.i
+
+# target to preprocess a source file
+Model/DoubleMajorStudent.cpp.i:
+	$(MAKE) -f CMakeFiles\TA_19.dir\build.make CMakeFiles/TA_19.dir/Model/DoubleMajorStudent.cpp.i
+.PHONY : Model/DoubleMajorStudent.cpp.i
+
+Model/DoubleMajorStudent.s: Model/DoubleMajorStudent.cpp.s
+
+.PHONY : Model/DoubleMajorStudent.s
+
+# target to generate assembly for a file
+Model/DoubleMajorStudent.cpp.s:
+	$(MAKE) -f CMakeFiles\TA_19.dir\build.make CMakeFiles/TA_19.dir/Model/DoubleMajorStudent.cpp.s
+.PHONY : Model/DoubleMajorStudent.cpp.s
+
 Model/Person.obj: Model/Person.cpp.obj
 
 .PHONY : Model/Person.obj
@@ -434,6 +461,9 @@ help:
 	@echo ... Model/Course.obj
 	@echo ... Model/Course.i
 	@echo ... Model/Course.s
+	@echo ... Model/DoubleMajorStudent.obj
+	@echo ... Model/DoubleMajorStudent.i
+	@echo ... Model/DoubleMajorStudent.s
 	@echo ... Model/Person.obj
 	@echo ... Model/Person.i
 	@echo ... Model/Person.s

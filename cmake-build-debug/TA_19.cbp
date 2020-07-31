@@ -92,6 +92,12 @@
 		<Unit filename="D:/Learning Course/C++/EducationSystem/Model/Course.h">
 			<Option target="TA_19"/>
 		</Unit>
+		<Unit filename="D:/Learning Course/C++/EducationSystem/Model/DoubleMajorStudent.cpp">
+			<Option target="TA_19"/>
+		</Unit>
+		<Unit filename="D:/Learning Course/C++/EducationSystem/Model/DoubleMajorStudent.h">
+			<Option target="TA_19"/>
+		</Unit>
 		<Unit filename="D:/Learning Course/C++/EducationSystem/Model/Person.cpp">
 			<Option target="TA_19"/>
 		</Unit>

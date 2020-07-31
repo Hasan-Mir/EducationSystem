@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TA_19.dir/Controller/Controller.cpp.obj"
   "CMakeFiles/TA_19.dir/Model/Course.cpp.obj"
+  "CMakeFiles/TA_19.dir/Model/DoubleMajorStudent.cpp.obj"
   "CMakeFiles/TA_19.dir/Model/Person.cpp.obj"
   "CMakeFiles/TA_19.dir/Model/Professor.cpp.obj"
   "CMakeFiles/TA_19.dir/Model/Student.cpp.obj"

@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Learning Course/C++/EducationSystem/Controller/Controller.cpp" "D:/Learning Course/C++/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/Controller/Controller.cpp.obj"
   "D:/Learning Course/C++/EducationSystem/Model/Course.cpp" "D:/Learning Course/C++/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/Model/Course.cpp.obj"
+  "D:/Learning Course/C++/EducationSystem/Model/DoubleMajorStudent.cpp" "D:/Learning Course/C++/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/Model/DoubleMajorStudent.cpp.obj"
   "D:/Learning Course/C++/EducationSystem/Model/Person.cpp" "D:/Learning Course/C++/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/Model/Person.cpp.obj"
   "D:/Learning Course/C++/EducationSystem/Model/Professor.cpp" "D:/Learning Course/C++/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/Model/Professor.cpp.obj"
   "D:/Learning Course/C++/EducationSystem/Model/Student.cpp" "D:/Learning Course/C++/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/Model/Student.cpp.obj"
