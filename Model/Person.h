@@ -13,6 +13,7 @@ public:
     virtual const std::string &getLastName() const final;
     virtual double getWorkHours() const final;
 
+
     Person(std::string firstName, std::string lastName, double workHours);
     Person() = default;
     virtual ~Person() = default;

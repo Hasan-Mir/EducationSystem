@@ -1,4 +1,5 @@
 #include "LeafMenu.h"
+#include <iomanip>
 #include <algorithm>
 using namespace std;
 
@@ -119,14 +120,14 @@ void LeafMenu::run() {
 
     // Math Class Menu
     else if(name == "Read Members From File"){
-
+        controller.readMembersFromFile();
     }
 
     else if(name == "Calculate Total Salary"){
-
+        cout << setprecision(15) << "Total Salary : " << controller.calculateTotalSalary() << endl;
     }
 
     else{
-        throw invalid_argument("This Menu hase not been defined!!");
+        throw invalid_argument("This Menu has not been defined!!");
     }
 }

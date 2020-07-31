@@ -237,3 +237,11 @@ void Controller::readMembersFromFile(){
     }
     input.close();
 }
+
+double Controller::calculateTotalSalary(){
+    double totalSalary = 0;
+    for(const auto& person : mathClass){
+        totalSalary += person->calculateSalary();
+    }
+    return totalSalary;
+}

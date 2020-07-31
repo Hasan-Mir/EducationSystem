@@ -43,6 +43,7 @@ public:
     bool inCourses(const std::string& courseName) const;
 
     void readMembersFromFile();
+    double calculateTotalSalary();
 };
 
 
