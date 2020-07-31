@@ -23,7 +23,13 @@ void LeafMenu::run() {
     }
 
     else if(name == "Take Course"){
-
+        string stuID;
+        string courseName;
+        cout << "Enter Student's ID:  ";
+        cin >> stuID;
+        cout << "Enter Course's Name:  ";
+        cin >> courseName;
+        controller.takeCourse(stuID , courseName);
     }
 
     else if(name == "Drop Course"){

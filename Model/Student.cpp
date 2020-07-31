@@ -88,3 +88,21 @@ void Student::setPassedCourses(const vector<std::string> &passedCourses) {
 void Student::setCurrentSemesterCourses(const map<std::string, double> &currentSemesterCourses) {
     Student::currentSemesterCourses = currentSemesterCourses;
 }
+
+bool Student::inPassedCourses(const string &courseName) {
+    for(const auto& crs : passedCourses){   // crs is the name of the course (is a string)
+        if(crs == courseName){
+            return true;
+        }
+    }
+    return false;
+}
+
+bool Student::inCurrentSemesterCourses(const string &courseName) {
+    for(const auto& crs : currentSemesterCourses){   // crs is the name of the course (is a string)
+        if(crs.first == courseName){
+            return true;
+        }
+    }
+    return false;
+}

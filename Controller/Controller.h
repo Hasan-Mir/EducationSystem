@@ -30,7 +30,8 @@ public:
             std::vector<std::string> pre);
     void takeCourse(const std::string& studentID, const std::string& courseName);
     Student& findStudent(std::string ID);
-
+    Course& findCourse(std::string courseName);
+    bool checkPreCoursesInPassedCourses(const Student& stu , const Course& course);
 
     bool inStudents(const std::string& ID) const;
     bool inProfessors(const std::string& ID) const;
