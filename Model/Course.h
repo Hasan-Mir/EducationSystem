@@ -6,6 +6,7 @@
 
 class Course {
     friend class Controller;
+    friend class LeafMenu;
 
     friend std::ostream& operator<<(std::ostream & output, const Course& course);
     friend std::istream& operator>>(std::istream & input, Course& course);

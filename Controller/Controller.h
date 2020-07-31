@@ -10,6 +10,7 @@
 class Controller {
     friend class Menu;
     friend class CommandsFromFileMenu;
+    friend class LeafMenu;
 private:
     std::string currentSemester;
     std::vector<Student> students;
