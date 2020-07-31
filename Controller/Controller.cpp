@@ -4,6 +4,7 @@
 #include <map>
 #include <algorithm>
 
+
 using namespace std;
 
 Controller::Controller(std::string currentSemester)
@@ -183,6 +184,24 @@ void Controller::takeCourse(const std::string &studentID, const std::string &cou
         }
     }
     catch (const invalid_argument& e) {
+        cout << e.what() << endl;
+    }
+}
+
+void Controller::dropCourse(const std::string& studentID, const std::string& courseName){
+    try{
+        Student & stu = findStudent(studentID);
+        auto crs = stu.currentSemesterCourses.find(courseName);
+        if(crs == stu.currentSemesterCourses.end()){
+            cout << "The Course doesn't exist in the student's courses." << endl;
+        }
+        else{
+            stu.currentSemesterCourses.erase(crs);
+            save();
+            cout << "The course has been deleted successfully." << endl;
+        }
+    }
+    catch(const invalid_argument& e){
         cout << e.what() << endl;
     }
 }

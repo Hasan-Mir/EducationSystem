@@ -33,7 +33,13 @@ void LeafMenu::run() {
     }
 
     else if(name == "Drop Course"){
-
+        string stuID;
+        string courseName;
+        cout << "Enter Student's ID:  ";
+        cin >> stuID;
+        cout << "Enter Course's Name:  ";
+        cin >> courseName;
+        controller.dropCourse(stuID , courseName);
     }
 
     else if(name == "Show Student Courses In Current Semester"){
