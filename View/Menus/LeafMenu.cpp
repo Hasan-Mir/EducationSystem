@@ -65,7 +65,11 @@ void LeafMenu::run() {
     }
 
     else if(name == "Calculate Student Salary"){
-
+        string stuID;
+        cout << "Enter Student's ID:  ";
+        cin >> stuID;
+        Student stu = controller.findStudent(stuID);
+        cout << stu.getFirstName() << " " << stu.getLastName() << "'s salary : " << stu.calculateSalary() << endl;
     }
 
     else if(name == "Show Professor Courses In Current Semester"){
