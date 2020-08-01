@@ -1,7 +1,8 @@
-6
+7
 952023016	Farhang	Doroudian	5	2	Math1	Differential	2	Math2	0	Physics1	18	
 952023017	Alireza	Akhavan	2	2	Math1	Geo	2	Math2	0	Physics1	18	
 952023018	Sara	Goli	0	0	0	
 952023019	Babak	Moghtader	0	0	0	
 952023020	Said	Ghorbani	0	0	0	
 952013018	Jamshid	Salehi	0	0	0	
+952023032	Vahid	Salehi	0	0	0	

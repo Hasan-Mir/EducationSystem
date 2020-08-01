@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-D:/Learning Course/C++/EducationSystem/Controller/Controller.cpp
-Controller.h
-D:/Learning Course/C++/EducationSystem/Controller/Controller.h
-fstream
--
-vector
--
-map
--
-algorithm
--
-
 D:/Learning Course/C++/EducationSystem/Controller/Controller.h
 string
 -
@@ -65,4 +53,26 @@ vector
 -
 map
 -
+
+D:/Learning Course/C++/EducationSystem/View/Menus/LeafMenu.cpp
+LeafMenu.h
+D:/Learning Course/C++/EducationSystem/View/Menus/LeafMenu.h
+iomanip
+-
+algorithm
+-
+
+D:/Learning Course/C++/EducationSystem/View/Menus/LeafMenu.h
+string
+-
+Menu.h
+D:/Learning Course/C++/EducationSystem/View/Menus/Menu.h
+
+D:/Learning Course/C++/EducationSystem/View/Menus/Menu.h
+string
+-
+vector
+-
+../../Controller/Controller.h
+D:/Learning Course/C++/EducationSystem/Controller/Controller.h
 

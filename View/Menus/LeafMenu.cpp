@@ -77,6 +77,7 @@ void LeafMenu::run() {
     // End of Professor Menu
 
 
+    // Manager Menu -> People
     else if(name == "Add Professor"){
         string ID;
         cout << "Enter professor number: ";
@@ -94,7 +95,7 @@ void LeafMenu::run() {
     }
 
     else if(name == "Show Professors"){
-
+        controller.showProfessors();
     }
 
     else if(name == "Add Student"){
@@ -111,16 +112,44 @@ void LeafMenu::run() {
     }
 
     else if(name == "Show Students"){
-
+        controller.showStudents();
     }
+    // End of Manager Menu -> People
 
+    // Manager Menu -> Courses
     else if(name == "Add Course"){
-
+        string courseName;
+        cout << "Enter course name: ";
+        cin >> courseName;
+        string profLastName;
+        cout << "Enter course professor's last name: ";
+        cin >> profLastName;
+        string semester;
+        cout << "Enter semester: ";
+        cin >> semester;
+        int preCourseSize;
+        cout << "Enter the number of course's preCourses: ";
+        cin >> preCourseSize;
+        string preCName;
+        vector<string> preCourses;
+        cout << "Enter course preCourses' name: " << endl;
+        for (int i = 0; i < preCourseSize; ++i) {
+            cout << i+1 << "." ;
+            cin >> preCName;
+            preCourses.push_back(preCName);
+        }
+        controller.addCourse(courseName,profLastName , semester , preCourses);
     }
 
     else if(name == "Show All Courses"){
-
+        controller.showAllCourses();
     }
+
+    else if(name == "Show Current Semester Courses"){
+        controller.showThisSemesterCourses();
+    }
+
+    //End of Manager Menu -> Courses
 
     // Math Class Menu
     else if(name == "Read Members From File"){
@@ -130,6 +159,7 @@ void LeafMenu::run() {
     else if(name == "Calculate Total Salary"){
         cout << setprecision(15) << "Total Salary : " << controller.calculateTotalSalary() << endl;
     }
+    // End of Math Class Menu
 
     else{
         throw invalid_argument("This Menu has not been defined!!");

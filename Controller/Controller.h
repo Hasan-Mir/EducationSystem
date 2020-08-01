@@ -37,6 +37,10 @@ public:
     Course& findCourse(std::string courseName);
     Professor& findProfessor(std::string profId);
 
+    void showProfessors() const;
+    void showStudents() const;
+    void showAllCourses() const;
+
     bool checkPreCoursesInPassedCourses(const Student& stu , const Course& course);
 
     void showThisSemesterCourses() const;

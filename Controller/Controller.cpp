@@ -76,7 +76,7 @@ void Controller::addStudent(std::string ID, std::string first, std::string last)
         students.push_back(stu);
     }
     else{
-        throw invalid_argument("The student has already been added!");
+        throw invalid_argument("The student has been added before!");
     }
 }
 
@@ -87,7 +87,7 @@ void Controller::addProfessor(std::string ID, std::string first,
         professors.push_back(prof);
     }
     else{
-        throw invalid_argument("The professor has already been added!");
+        throw invalid_argument("The professor has been added before!");
     }
 }
 
@@ -101,7 +101,7 @@ void Controller::addCourse(std::string courseName, std::string profLast, std::st
         }
     }
     else{
-        throw invalid_argument("The course has already been added or the course's professor doesn't exist!");
+        throw invalid_argument("The course has been added before or the course's professor doesn't exist!");
     }
 }
 
@@ -283,6 +283,42 @@ void Controller::showStudentCoursesInCurrentSemester(const Student& stu) const{
     else{
         for(const auto& course : stu.currentSemesterCourses){
             cout << course.first << "\t" << course.second << endl;
+        }
+        cout << endl;
+    }
+}
+
+void Controller::showProfessors() const{
+    if(professors.size() == 0){
+        cout << "There is nothing to show !" << endl;
+    }
+    else{
+        for(const auto & prof : professors){
+            cout << prof.getFirstName() << " " << prof.getLastName() << "  |  ";
+        }
+        cout << endl;
+    }
+}
+
+void Controller::showStudents() const{
+    if(students.size() == 0){
+        cout << "There is nothing to show !" << endl;
+    }
+    else{
+        for(const auto & stu : students){
+            cout << stu.getFirstName() << " " << stu.getLastName() << "  |  ";
+        }
+        cout << endl;
+    }
+}
+
+void Controller::showAllCourses() const{
+    if(courses.size() == 0){
+        cout << "There is nothing to show !" << endl;
+    }
+    else{
+        for(const auto & crs : courses){
+            cout << crs.courseName << "  |  ";
         }
         cout << endl;
     }
