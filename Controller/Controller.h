@@ -37,6 +37,8 @@ public:
     Course& findCourse(std::string courseName);
     bool checkPreCoursesInPassedCourses(const Student& stu , const Course& course);
 
+    void showThisSemesterCourses() const;
+
     bool inStudents(const std::string& ID) const;
     bool inProfessors(const std::string& ID) const;
     bool inProfessorsByLastName(const std::string& last) const;

@@ -217,7 +217,7 @@ void Controller::readMembersFromFile(){
     string last;
     string title;
     double wh;
-    while (!input.eof()){
+    while (!input.eof()){   // text file must not have empty line at the end
         input >> typeSpecifier;
         if(typeSpecifier == 'S'){
             input >> id >> first >> last >> wh;
@@ -244,4 +244,16 @@ double Controller::calculateTotalSalary(){
         totalSalary += person->calculateSalary();
     }
     return totalSalary;
+}
+
+void Controller::showThisSemesterCourses() const{
+    if(currentSemesterCourses.size() == 0){
+        cout << "There is nothing to show !" << endl;
+    }
+    else{
+        for(const auto & course : currentSemesterCourses){
+            cout << course.courseName << "  |  ";
+        }
+        cout << endl;
+    }
 }

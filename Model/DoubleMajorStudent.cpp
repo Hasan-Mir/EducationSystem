@@ -8,8 +8,8 @@
 using namespace std;
 
 DoubleMajorStudent::DoubleMajorStudent(const string &studentId, string first, string last, double workHours,
-        vector<std::string> major1passedCourses, std::map<std::string, double> major2currentSemesterCourses , std::string major2)
-        : Student(studentId, move(first), move(last), workHours,move(major1passedCourses),move(major2currentSemesterCourses)) ,
+                                       vector<std::string> passedCourses, std::map<std::string, double> currentSemesterCourses , std::string major2)
+        : Student(studentId, move(first), move(last), workHours, move(passedCourses), move(currentSemesterCourses)) ,
           major2(move(major2)) {}
 
 double DoubleMajorStudent::calculateSalary() const {

@@ -12,15 +12,7 @@ void LeafMenu::run() {
     setCurrentMenu(parent);
 
     if(name == "Show This Semester Courses"){
-        if(controller.currentSemesterCourses.size() == 0){
-            cout << "There is nothing to show !" << endl;
-        }
-        else{
-            for(const auto & course : controller.currentSemesterCourses){
-                cout << course.courseName << "  |  ";
-            }
-            cout << endl;
-        }
+        controller.showThisSemesterCourses();
     }
 
     else if(name == "Take Course"){
