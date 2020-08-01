@@ -148,7 +148,16 @@ Course & Controller::findCourse(std::string courseName){
             return crs;
         }
     }
-    throw invalid_argument("The Student was not found!!");
+    throw invalid_argument("The Course was not found!!");
+}
+
+Professor& Controller::findProfessor(std::string profId){
+    for (auto &prof : professors) {
+        if (prof.profId == profId) {
+            return prof;
+        }
+    }
+    throw invalid_argument("The Professor was not found!!");
 }
 
 bool Controller::checkPreCoursesInPassedCourses(const Student& stu , const Course& course){

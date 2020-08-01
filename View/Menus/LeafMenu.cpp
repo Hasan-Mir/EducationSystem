@@ -11,6 +11,7 @@ void LeafMenu:: showSubMenus() const {}
 void LeafMenu::run() {
     setCurrentMenu(parent);
 
+    // Student Menu
     if(name == "Show This Semester Courses"){
         controller.showThisSemesterCourses();
     }
@@ -55,7 +56,9 @@ void LeafMenu::run() {
         Student stu = controller.findStudent(stuID);
         cout << stu.getFirstName() << " " << stu.getLastName() << "'s salary : " << stu.calculateSalary() << endl;
     }
+    // End of Student Menu
 
+    // Professor Menu
     else if(name == "Show Professor Courses In Current Semester"){
 
     }
@@ -65,8 +68,14 @@ void LeafMenu::run() {
     }
 
     else if(name == "Calculate Professor Salary"){
-
+        string profID;
+        cout << "Enter Professor's ID:  ";
+        cin >> profID;
+        Professor prof = controller.findProfessor(profID);
+        cout << setprecision(10) << prof.getFirstName() << " " << prof.getLastName() << "'s salary : " << prof.calculateSalary() << endl;
     }
+    // End of Professor Menu
+
 
     else if(name == "Add Professor"){
 

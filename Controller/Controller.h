@@ -35,6 +35,8 @@ public:
     void dropCourse(const std::string& studentID, const std::string& courseName);
     Student& findStudent(std::string ID);
     Course& findCourse(std::string courseName);
+    Professor& findProfessor(std::string profId);
+
     bool checkPreCoursesInPassedCourses(const Student& stu , const Course& course);
 
     void showThisSemesterCourses() const;
