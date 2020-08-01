@@ -257,3 +257,16 @@ void Controller::showThisSemesterCourses() const{
         cout << endl;
     }
 }
+
+void Controller::showStudentCoursesInCurrentSemester(const Student& stu) const{
+    cout << "Student Name: " << stu.getFirstName() << " " << stu.getLastName() << endl;
+    if(stu.currentSemesterCourses.size() == 0){
+        cout << "There is nothing to show !" << endl;
+    }
+    else{
+        for(const auto& course : stu.currentSemesterCourses){
+            cout << course.first << "\t" << course.second << endl;
+        }
+        cout << endl;
+    }
+}

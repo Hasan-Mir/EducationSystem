@@ -38,6 +38,7 @@ public:
     bool checkPreCoursesInPassedCourses(const Student& stu , const Course& course);
 
     void showThisSemesterCourses() const;
+    void showStudentCoursesInCurrentSemester(const Student& stu) const;
 
     bool inStudents(const std::string& ID) const;
     bool inProfessors(const std::string& ID) const;

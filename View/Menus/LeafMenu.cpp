@@ -41,16 +41,7 @@ void LeafMenu::run() {
         cin >> stuID;
         try{
             Student stu = controller.findStudent(stuID);
-            cout << "Student Name: " << stu.getFirstName() << " " << stu.getLastName() << endl;
-            if(stu.currentSemesterCourses.size() == 0){
-                cout << "There is nothing to show !" << endl;
-            }
-            else{
-                for(const auto& course : stu.currentSemesterCourses){
-                    cout << course.first << "\t" << course.second << endl;
-                }
-                cout << endl;
-            }
+            controller.showStudentCoursesInCurrentSemester(stu);
         }
         catch (const invalid_argument& e) {
             cout << e.what() << endl;
