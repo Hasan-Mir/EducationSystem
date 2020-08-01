@@ -1,5 +1,5 @@
 4
-Math2	Mehrabian	99-1	2	Math1	Differential
-Differential	Habibi	99-1	1	Math1
-Physics1	Mohebi	98-2	0
-Math1	Aghamiri	99-1	0
+Math2	Mehrabian	99-1	2	Math1	Differential	
+Differential	Habibi	99-1	1	Math1	
+Physics1	Mohebi	98-2	0	
+Math1	Aghamiri	99-1	0	

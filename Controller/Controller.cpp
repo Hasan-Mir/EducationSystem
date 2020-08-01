@@ -75,6 +75,9 @@ void Controller::addStudent(std::string ID, std::string first, std::string last)
                     vector<string>{}, map<string, double>{}};
         students.push_back(stu);
     }
+    else{
+        throw invalid_argument("The student has already been added!");
+    }
 }
 
 void Controller::addProfessor(std::string ID, std::string first,
@@ -82,6 +85,9 @@ void Controller::addProfessor(std::string ID, std::string first,
     if (!inProfessors(ID)) {
         Professor prof{move(ID), move(first), move(last), 0, move(title)};
         professors.push_back(prof);
+    }
+    else{
+        throw invalid_argument("The professor has already been added!");
     }
 }
 
@@ -94,7 +100,9 @@ void Controller::addCourse(std::string courseName, std::string profLast, std::st
             currentSemesterCourses.push_back(crs);
         }
     }
-
+    else{
+        throw invalid_argument("The course has already been added or the course's professor doesn't exist!");
+    }
 }
 
 bool Controller::inStudents(const std::string &ID) const {

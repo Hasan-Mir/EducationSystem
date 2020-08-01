@@ -78,7 +78,19 @@ void LeafMenu::run() {
 
 
     else if(name == "Add Professor"){
-
+        string ID;
+        cout << "Enter professor number: ";
+        cin >> ID;
+        string first;
+        cout << "Enter First Name: ";
+        cin >> first;
+        string last;
+        cout << "Enter Last Name: ";
+        cin >> last;
+        string title;
+        cout << "Enter title: ";
+        cin >> title;
+        controller.addProfessor(ID, first, last , title);
     }
 
     else if(name == "Show Professors"){
